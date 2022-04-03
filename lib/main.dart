@@ -25,6 +25,16 @@ class MaterialFlutterApp extends StatefulWidget {
 class _MaterialFlutterApp extends State<MaterialFlutterApp> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(); // Scaffold() 함수 호출로 위젯의 골격만 작성
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Material Design App'),
+      ),
+      floatingActionButton:
+          FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
+      body: Container(
+          child: Column(
+        children: <Widget>[Icon(Icons.android), Text('android')],
+      )),
+    );
   }
 }
