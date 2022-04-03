@@ -32,9 +32,11 @@ class _MaterialFlutterApp extends State<MaterialFlutterApp> {
       floatingActionButton:
           FloatingActionButton(child: Icon(Icons.add), onPressed: () {}),
       body: Container(
-          child: Column(
+          child: Center(
+              child: Column(
         children: <Widget>[Icon(Icons.android), Text('android')],
-      )),
+        mainAxisAlignment: MainAxisAlignment.center,
+      ))),
     );
   }
 }
